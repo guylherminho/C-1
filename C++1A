@@ -49,3 +49,48 @@ ________________________________________________
 #include <windows.h> // alterações de cores fundos e letras
 #include <locale.h> //
 
+
+
+
+Aula II 08/05/17
+
+a=b++ : primeiro atribui o valor de B na variavel A e depois acrescenta +1 em B;
+a=++b : primeiro atribui +1 na variavel B e depois passa o valor para a variavel A;
+== igual a;
+!= Não igual a;
+&& AND;
+|| OR;
+! NOT;
+&& ex: if(a>2&&b<3);
+x*1.10 = acrescentar 10%
+10/100
+
+
+
+
+
+
+% resto da divisão;
+-- decremento = passo -1,-2,-3;
+++ incremento = passo 1,2,3 etc
+
+//CÓDIGO PARA MEDIR A AREA
+
+#include <stdio.h> //funções auxiliares
+#include <conio.h> //operações matematicas básicas
+
+int main (){
+//float é usado para numeros com virgula
+	float base,altura,area;
+
+	printf("Digite o valor da base: ");
+	scanf ("%f", &base);
+	printf("digite o valor da altura: ");
+	scanf("%f", &altura);
+//calculo usado para medir a area (base * altura divididos por 2)
+	
+	area = (base * altura)  / 2;
+//mostrar na tela o valor, (%.2f é o numero de casas decimais desejadas)
+	printf ("A area é : %.2f", area);
+	
+}
