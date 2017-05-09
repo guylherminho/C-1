@@ -94,3 +94,15 @@ int main (){
 	printf ("A area é : %.2f", area);
 	
 }
+switch =escolha
+case = caso variavel x seja maior 
+sintaxe= como escreve, se está certo ou errado.
+semantica = o que o comando faz
+
+________________________________
+
+se (idade>18) entao
+
+cateira<"s"
+preso<"s"
+ctutelar<"n"
