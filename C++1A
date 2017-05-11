@@ -186,3 +186,24 @@ printf("%f\n", precobala);
       valor=qtbalas*precobala; 	
        	printf("O valor a ser pago é %.2f", valor);
        }
+       
+       __________________________________
+       
+       
+sintaxe FOR
+
+for (inicialização; condição, incremento(passo1,2,3etc)
+{
+instruções;
+}
+
+
+int main (){
+int 1;       
+for (i=1; i<=10;i++){ //   i-- (decrementar)
+printf("%d\n",i);
+}
+system("pause")
+}
+
+
