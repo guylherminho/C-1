@@ -106,3 +106,83 @@ se (idade>18) entao
 cateira<"s"
 preso<"s"
 ctutelar<"n"
+
+
+10/05- IF
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+
+int main ()
+{
+	int a,b;
+	printf("Entre com dois numeros: \n");
+	scanf("%d %d", &a,&b);
+	if (a==b)
+{
+	printf("Os numeros sao iguais ");
+}
+	else
+	{
+		printf("Os numeros são diferentes ");
+	}
+	getch();
+}
+___________________________________________-
+
+
+
+SWITCH:
+VALOR DAS BALAS DE ACORDO COM A QUANTIDADE;
+
+
+#include <stdlib.h> //inicialização e finalização
+#include <stdio.h> //funções auxiliares
+#include <conio.h> //operações matematicas básicas
+#include <math.h> //funções matematicas mais elaboradas
+#include <time.h> //tempo
+#include <string.h> //palavras
+#include <windows.h> // alterações de cores fundos e letras
+#include <locale.h> //
+
+int main ()
+{
+	int qtbalas; 
+	float precobala, valor;
+	
+	printf("Digite a quantidade de balas: \n\n");
+	scanf("%i", &qtbalas);
+	switch (qtbalas){ 
+	//DE 1 A 50 COBRAR 0,30 CENTAVOS
+ case 1 ... 50: 
+       	precobala=0.30;
+break;     
+  	// DE 51 A 100 COBRAR 0,25 CENTAVOS
+ case 51 ... 100:
+       		precobala=0.25;
+break;
+// DE 101 A 200 COBRAR 0,22 CENTAVOS
+ case 101 ... 200:
+       		precobala=0.22;
+break;
+//DE 201 A 400 COBRAR 0,17 CENTAVOS
+ case 201 ... 400:
+       		precobala=0.17;
+break;
+//DE 400+ COBRAR 0,15 CENTAVOS
+default:
+	
+	precobala=0.15;
+	
+
+
+
+       	
+}
+//TESTAR PRA VER SE OS VALORES ESTÃO GRAVANDO NO PRINT
+printf("%i\n", qtbalas);
+printf("%f\n", precobala);
+
+      valor=qtbalas*precobala; 	
+       	printf("O valor a ser pago é %.2f", valor);
+       }
