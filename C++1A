@@ -207,3 +207,80 @@ system("pause")
 }
 
 
+_________________________________________________
+int main(){
+int num, den;
+float s=0
+
+for (num=1 ;num<=99;num+2, den++)
+{
+ s=s+(float)num/den;
+}
+}
+
+
+
+____________________________
+TOTAL DE DESPESAS E MEDIA DE SALÁRIO
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <math.h>
+#include <locale.h>
+
+int main ()
+{
+	//para o programa entender pt
+	
+	setlocale(LC_ALL, "PORTUGUESE");
+//iniciar o total com 0
+	float sal,media,total=0;
+	int var;
+printf("###########SOME A MEDIA DOS FUNCIONARIOS################ \n\n");
+	//laço de repetição
+	for (var=1;var<6; var++)
+{
+	printf("Digite o salário do funcionário numero %i!: \n ",var);
+	scanf("%f", &sal);
+	total=total+sal;
+    media=total/5;	
+//printar na tela
+}
+printf("A despesa total é: %.2f \n\n", total);	
+printf("A media de salários é: %.2f", media);
+}
+
+
+____________________________________________.
+
+
+
+rand
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <math.h>
+#include <locale.h>
+#include <string.h>
+#include <time.h>
+#include <windows.h>
+int main ()
+{
+	setlocale (LC_ALL,"PORTUGUESE");
+	int cont;
+	float sal,media=0,soma=0;
+	printf("SOMA E MEDIA");
+	srand(time(NULL));
+	for(cont=1;cont<=10;cont++)
+	{
+	
+	sal = rand()%10000;
+	printf("\n O %i salario é: %.2f",cont,sal);
+	Sleep(500);
+	soma=soma+sal;
+	media=soma/cont;
+}
+printf("O valor total das despesas é: %f",soma);
+printf("O valor da média de salários é: %f",media);
+}
