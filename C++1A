@@ -284,3 +284,30 @@ int main ()
 printf("O valor total das despesas é: %f",soma);
 printf("O valor da média de salários é: %f",media);
 }
+
+
+________________________________________________________________________
+
+for
+while
+do
+
+
+
+for(i=1;i<=5;i++)
+{
+instrução
+}
+
+while (condição)(TESTA NO COMEÇO, SE NAO FOR ELE NEM ENTRA NO LAÇO)
+{
+}
+do (PASSA NA CONDIÇÃO UMA VEZ E DPS VE SE É VALIDA OU NAO)
+{
+
+}
+
+
+int main ()
+{
+float 
