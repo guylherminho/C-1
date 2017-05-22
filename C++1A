@@ -311,3 +311,38 @@ do (PASSA NA CONDIÇÃO UMA VEZ E DPS VE SE É VALIDA OU NAO)
 int main ()
 {
 float 
+
+
+___________________________________________________________
+
+
+
+
+#include <stdlib.h> //inicialização e finalização
+#include <stdio.h> //funções auxiliares
+#include <conio.h> //operações matematicas básicas
+#define N 5
+
+int main()
+{
+	float quant[N];
+	float preco[N];
+	int i;
+    float Fat;
+    
+    for (i=0;i<N;i++)
+    {
+    	printf("Digite a quantidade do produto %d:\n ", i+1 );
+    	scanf("%f", &quant[i]);
+    	printf("Digite o preço do produto %i:\n\n ", i+1);
+    	scanf("%f", &preco[i]);
+    	Fat=Fat+quant[i]*preco[i];
+    	system("cls");
+    	
+	}
+	printf("\n\n
+	 ###########O FATURAMENTO MENSAL É DE %.2f###############\n\n",Fat);	
+	
+	system("pause");
+	return 0;
+}
