@@ -382,3 +382,48 @@ int main ()
 		printf("\nA média do aluno %i é: %.2f",i+1,media[i]);
 	}
 }
+ STRUCT  STRUCT  STRUCT  STRUCT  STRUCT  STRUCT  STRUCT  STRUCT  STRUCT  STRUCT  STRUCT  STRUCT  STRUCT  STRUCT  STRUCT  STRUCT  STRUCT 
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <locale.h>
+#define N 2
+struct contato {
+	char nome[50],end[50],tel[50],email[50];
+	
+	
+};
+
+int main (){
+	 
+	setlocale (LC_ALL, "PORTUGUESE");
+	struct contato c[N];
+	int i;
+	for(i=0;i<N;i++)
+	{
+		printf("_-_-_-_-_-_-_-_-_- A G E N D A _-_-_-_-_-_-_-_-_-_-_-_-_-\n\n");
+		printf("Digite o nome do %iº contato: \n", i+1);
+	    gets(c[i].nome);
+		printf("Digite o Endereço do %iº contato: \n",i+1);
+		gets(c[i].end);
+		printf("Digite o telefone do %iº contato: \n",i+1);
+		gets(c[i].tel);
+		printf("Digite o email do %iº contato: \n", i+1);
+		gets(c[i].email);
+		
+		system("cls");
+}
+for(i=0;i<N;i++)
+{
+
+	printf("################DADOS CADASTRADOS#####################\n\n");
+	printf("Nome: %s\n\n", c[i].nome);
+	printf("Endereço: %s\n\n", c[i].end);
+	printf("Telefone: %s\n\n", c[i].tel);
+	printf("Email: %s\n\n", c[i].email);
+	
+	printf("___________________");
+	
+}
+}
